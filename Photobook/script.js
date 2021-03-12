@@ -1,4 +1,3 @@
-
 class PhotoBook {
     constructor(number){
         this._numPages;
@@ -21,14 +20,14 @@ class BigPhotoBook {
 
 class PhotoBookTest {
     constructor(pageNumber) {
-        
-        this.photoBook;       
+
+        this.photoBook;
 
         if (pageNumber == undefined) {
             this.createPhotoBook();
         } else if (pageNumber >= new BigPhotoBook().numPages) {
             this.createBigPhotoBook(pageNumber);
-            
+
         } else {
             this.createPhotoBook(pageNumber);
         }
@@ -44,7 +43,7 @@ class PhotoBookTest {
        return this.photoBook;
     }
 }
- 
+
 console.log(new PhotoBookTest(68));
 
 
